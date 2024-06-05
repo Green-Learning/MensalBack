@@ -1,0 +1,42 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2024-05-07T21:43:08.039-03:00  INFO 3918 --- [           main] b.c.p.pizzaria.PizzariaApplication       : Starting PizzariaApplication v0.0.1-SNAPSHOT using Java 17.0.10 with PID 3918 (/etc/mensal/Pizzaria_BackEnd_new/target/pizzaria-0.0.1-SNAPSHOT.jar started by root in /etc/mensal/Pizzaria_BackEnd_new)
+2024-05-07T21:43:08.053-03:00  INFO 3918 --- [           main] b.c.p.pizzaria.PizzariaApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-05-07T21:43:11.931-03:00  INFO 3918 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-07T21:43:12.146-03:00  INFO 3918 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 187 ms. Found 7 JPA repository interfaces.
+2024-05-07T21:43:14.772-03:00  INFO 3918 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 443 (https)
+2024-05-07T21:43:14.825-03:00  INFO 3918 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-07T21:43:14.826-03:00  INFO 3918 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-05-07T21:43:15.101-03:00  INFO 3918 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-07T21:43:15.106-03:00  INFO 3918 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6764 ms
+2024-05-07T21:43:15.570-03:00  INFO 3918 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-07T21:43:16.033-03:00  INFO 3918 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b46a8c1
+2024-05-07T21:43:16.042-03:00  INFO 3918 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-07T21:43:16.372-03:00  INFO 3918 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-07T21:43:16.687-03:00  INFO 3918 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-05-07T21:43:16.697-03:00  INFO 3918 --- [           main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-05-07T21:43:17.161-03:00  INFO 3918 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-05-07T21:43:17.859-03:00  INFO 3918 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-07T21:43:18.869-03:00  INFO 3918 --- [           main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-05-07T21:43:20.813-03:00  INFO 3918 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: alter table if exists item alter column valor set data type float4
+Hibernate: alter table if exists pedido alter column valor_total set data type float4
+2024-05-07T21:43:21.211-03:00  INFO 3918 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-07T21:43:22.574-03:00  INFO 3918 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-05-07T21:43:25.193-03:00  WARN 3918 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-07T21:43:28.097-03:00  INFO 3918 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4a9869a8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75e0a54c, org.springframework.security.web.context.SecurityContextHolderFilter@1669931a, org.springframework.security.web.header.HeaderWriterFilter@12f9f896, org.springframework.security.web.authentication.logout.LogoutFilter@49e479da, br.com.projeto.pizzaria.config.JwtAuthenticationFilter@48e8c32a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12e007be, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@699e0bf0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40f9f60d, org.springframework.security.web.session.SessionManagementFilter@45571cfc, org.springframework.security.web.access.ExceptionTranslationFilter@34f23816, org.springframework.security.web.access.intercept.AuthorizationFilter@e162a35]
+2024-05-07T21:43:29.243-03:00  INFO 3918 --- [           main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/root:.keystore] using alias [1] with trust store [null]
+2024-05-07T21:43:29.519-03:00  INFO 3918 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 443 (https) with context path ''
+2024-05-07T21:43:29.554-03:00  INFO 3918 --- [           main] b.c.p.pizzaria.PizzariaApplication       : Started PizzariaApplication in 22.978 seconds (process running for 24.418)
+2024-05-07T21:44:35.706-03:00  INFO 3918 --- [-nio-443-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-07T21:44:35.715-03:00  INFO 3918 --- [-nio-443-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-07T21:44:35.731-03:00  INFO 3918 --- [-nio-443-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+Hibernate: select u1_0.id,u1_0.password,u1_0.role,u1_0.username_email from public.user_conta u1_0 where u1_0.username_email=?
+Hibernate: select u1_0.id,u1_0.password,u1_0.role,u1_0.username_email from public.user_conta u1_0 where u1_0.username_email=?
