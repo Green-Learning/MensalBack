@@ -1,0 +1,37 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: validate
+      # Uncomment the appropriate line for your desired behavior
+      # ddl-auto: update
+      # ddl-auto: create
+      # ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    platform: postgres
+    url: jdbc:postgresql://pizzariagln.c96u8sisi93d.us-east-2.rds.amazonaws.com:5432/pizzaria
+    username: pizzaria_gln
+    password: ay6a&2Wa2;LVL!e
+
+security:
+  jwt:
+    chave-secret: ${JWT_SECRET:cGFvZGVxdWVpam8=}
+
+logging:
+  file:
+    name: application.log
+
+server:
+  port: 443
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: senha123
+    key-store-type: PKCS12
+    key-alias: pizzariagln
