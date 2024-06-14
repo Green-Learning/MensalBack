@@ -1,18 +1,23 @@
 keycloak:
+  auth-server-url: http://localhost:8080/auth
   realm: pizzariaGLN
-  auth-server-url: http://keycloak:8080/auth
   resource: pizzaria_admin
-#  credentials:
-#    secret: YOUR_CLIENT_SECRET
-  principal-attribute: preferred_username
+  credentials:
+    secret: adppnSe2hjv6wDDKhTjKGTPUIwbKhrDc
+
+jwt:
+  auth:
+    converter:
+      resource-id: pizzaria_admin
+      princicple-attribute: user_pizzaria_admin
 
 spring:
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak:8080/realms/pizzariaGLN
-          jwk-set-uri: http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8080/realms/pizzariaGLN
+          jwk-set-uri: http://localhost:8080/realms/pizzariaGLN/protocol/openid-connect/certs
   jpa:
     database: postgresql
     show-sql: true
