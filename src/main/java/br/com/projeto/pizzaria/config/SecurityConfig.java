@@ -3,6 +3,7 @@ package br.com.projeto.pizzaria.config;
 import java.util.Arrays;
 
 import lombok.RequiredArgsConstructor;
+import org.keycloak.adapters.springsecurity.authentication.KeycloakAuthenticationProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -10,11 +11,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.authority.mapping.SimpleAuthorityMapper;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
@@ -34,42 +37,12 @@ public class SecurityConfig {
     private AuthenticationProvider authenticationProvider;
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-         http
-                .csrf(csrf -> csrf.disable());
-//                .authorizeHttpRequests().requestMatchers(HttpMethod.POST, "/token/login").permitAll() // Exclude "/login" from security filter chain
-//                .anyRequest()
-//                .authenticated();
-//        http
-//                .csrf()
-//                .disable()
-//                .authorizeHttpRequests().requestMatchers(HttpMethod.POST, "/token/login").permitAll() // Exclude "/login" from security filter chain
-//                .anyRequest()
-//                .authenticated();
-//        http
-//                .oauth2ResourceServer()
-//                .jwt()
-//                .jwtAuthenticationConverter(jwtAuthConverter);
-//        http
-//                .sessionManagement()
-//                .sessionCreationPolicy(STATELESS);
-//       http.csrf(csrf -> csrf.disable()).oauth2ResourceServer(oauth2 -> oauth2
-//               .jwt(jwt -> jwt.jwtAuthenticationConverter(new JWTConverter())) );
-//
-
-//       http.authorizeHttpRequests(authorizeConfig -> {authorizeConfig.anyRequest().authenticated();
-//                   authorizeConfig.requestMatchers("/login").permitAll();});
-//        http
-//                .csrf(AbstractHttpConfigurer::disable)
-//                .cors(AbstractHttpConfigurer::disable)
-//                .authorizeHttpRequests((requests) -> requests
-//                        .requestMatchers("/*").permitAll() //permitir o primeiro nível pra rodar o Angular
-//                        .requestMatchers("/api/login").permitAll()
-//                        .requestMatchers("/api/cadastrar").permitAll()
-//                        .anyRequest().authenticated())
-//                .authenticationProvider(authenticationProvider)
-//                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
-//                .sessionManagement(customizer -> customizer.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
-
+        http
+                .csrf()
+                .disable()
+                .authorizeHttpRequests().requestMatchers(HttpMethod.POST, "/token/login").permitAll() // Exclude "/login" from security filter chain
+                .anyRequest()
+                .authenticated();
         return http.build();
     }
 
@@ -80,7 +53,7 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         //config.addAllowedOrigin("http://localhost:4200");
-        config.addAllowedOrigin("/*");
+        config.addAllowedOrigin("/*"); //Alterar isto aqui por questoens de seguranca
 //        config.addAllowedOrigin("https://192.168.56.108");
         config.setAllowedHeaders(Arrays.asList(HttpHeaders.AUTHORIZATION,HttpHeaders.CONTENT_TYPE,HttpHeaders.ACCEPT));
         config.setAllowedMethods(Arrays.asList(HttpMethod.GET.name(),HttpMethod.POST.name(),HttpMethod.PUT.name(),HttpMethod.DELETE.name()));

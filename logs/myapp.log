@@ -1,40 +1,5 @@
-2024-06-13 09:34:41 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h59m9s618ms628µs200ns).
-2024-06-13 10:04:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-13 10:04:53 - HikariPool-1 - Shutdown initiated...
-2024-06-13 10:04:55 - HikariPool-1 - Shutdown completed.
-2024-06-13 10:05:02 - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-13 10:05:02 - Starting PizzariaApplication using Java 17.0.8.1 with PID 23236 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
-2024-06-13 10:05:02 - No active profile set, falling back to 1 default profile: "default"
-2024-06-13 10:05:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-13 10:05:05 - Finished Spring Data repository scanning in 187 ms. Found 7 JPA repository interfaces.
-2024-06-13 10:05:07 - Tomcat initialized with port(s): 8081 (http)
-2024-06-13 10:05:07 - Initializing ProtocolHandler ["http-nio-8081"]
-2024-06-13 10:05:07 - Starting service [Tomcat]
-2024-06-13 10:05:07 - Starting Servlet engine: [Apache Tomcat/10.1.11]
-2024-06-13 10:05:07 - Initializing Spring embedded WebApplicationContext
-2024-06-13 10:05:07 - Root WebApplicationContext: initialization completed in 5424 ms
-2024-06-13 10:05:08 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-13 10:05:08 - HHH000412: Hibernate ORM core version 6.2.6.Final
-2024-06-13 10:05:08 - HHH000406: Using bytecode reflection optimizer
-2024-06-13 10:05:08 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-13 10:05:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-13 10:05:08 - HikariPool-1 - Starting...
-2024-06-13 10:05:11 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71beada8
-2024-06-13 10:05:11 - HikariPool-1 - Start completed.
-2024-06-13 10:05:12 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-13 10:05:13 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-13 10:05:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-13 10:05:15 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-13 10:05:18 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-13 10:05:21 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-06-13 10:05:21 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@286e2b71, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ad4d333, org.springframework.security.web.context.SecurityContextHolderFilter@47814094, org.springframework.security.web.header.HeaderWriterFilter@5d39797a, org.springframework.security.web.authentication.logout.LogoutFilter@6f6d2847, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@87affb5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c461b90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b3fff29, org.springframework.security.web.access.ExceptionTranslationFilter@22eccd2c, org.springframework.security.web.access.intercept.AuthorizationFilter@74d6d5ca]
-2024-06-13 10:05:23 - Starting ProtocolHandler ["http-nio-8081"]
-2024-06-13 10:05:23 - Tomcat started on port(s): 8081 (http) with context path ''
-2024-06-13 10:05:23 - Started PizzariaApplication in 21.946 seconds (process running for 22.805)
-2024-06-13 10:10:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-13 10:10:11 - Initializing Servlet 'dispatcherServlet'
-2024-06-13 10:10:11 - Completed initialization in 2 ms
-2024-06-13 10:10:14 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/token": keycloak] with root cause
+2024-06-14 08:17:48 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h21m605ms628µs200ns).
+2024-06-14 09:34:43 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/token": keycloak] with root cause
 java.net.UnknownHostException: keycloak
 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572)
 	at java.base/java.net.Socket.connect(Socket.java:633)
@@ -177,645 +142,151 @@ java.net.UnknownHostException: keycloak
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-06-13 10:10:44 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/token": keycloak] with root cause
-java.net.UnknownHostException: keycloak
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at java.base/java.net.Socket.connect(Socket.java:583)
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:281)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:75)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:512)
-	at br.com.projeto.pizzaria.auth.TokenController.token(TokenController.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at br.com.projeto.pizzaria.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:40)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-06-13 10:25:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-13 10:25:18 - HikariPool-1 - Shutdown initiated...
-2024-06-13 10:25:28 - Timed-out waiting for close connection executor to shutdown
-2024-06-13 10:25:28 - HikariPool-1 - Shutdown completed.
-2024-06-13 10:25:35 - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-13 10:25:35 - Starting PizzariaApplication using Java 17.0.8.1 with PID 39924 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
-2024-06-13 10:25:35 - No active profile set, falling back to 1 default profile: "default"
-2024-06-13 10:25:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-13 10:25:37 - Finished Spring Data repository scanning in 123 ms. Found 7 JPA repository interfaces.
-2024-06-13 10:25:39 - Tomcat initialized with port(s): 8081 (http)
-2024-06-13 10:25:39 - Initializing ProtocolHandler ["http-nio-8081"]
-2024-06-13 10:25:39 - Starting service [Tomcat]
-2024-06-13 10:25:39 - Starting Servlet engine: [Apache Tomcat/10.1.11]
-2024-06-13 10:25:40 - Initializing Spring embedded WebApplicationContext
-2024-06-13 10:25:40 - Root WebApplicationContext: initialization completed in 4965 ms
-2024-06-13 10:25:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-13 10:25:41 - HHH000412: Hibernate ORM core version 6.2.6.Final
-2024-06-13 10:25:41 - HHH000406: Using bytecode reflection optimizer
-2024-06-13 10:25:41 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-13 10:25:42 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-13 10:25:42 - HikariPool-1 - Starting...
-2024-06-13 10:25:44 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54286339
-2024-06-13 10:25:44 - HikariPool-1 - Start completed.
-2024-06-13 10:25:45 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-13 10:25:46 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-13 10:25:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-13 10:25:48 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-13 10:25:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-13 10:25:53 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-06-13 10:25:53 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72788282, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ddb59b6, org.springframework.security.web.context.SecurityContextHolderFilter@2c8c897e, org.springframework.security.web.header.HeaderWriterFilter@39c437e9, org.springframework.security.web.authentication.logout.LogoutFilter@79a68d4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a9b5c85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fcecc45, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60bc259a, org.springframework.security.web.access.ExceptionTranslationFilter@6d8dc329, org.springframework.security.web.access.intercept.AuthorizationFilter@47970962]
-2024-06-13 10:25:54 - Starting ProtocolHandler ["http-nio-8081"]
-2024-06-13 10:25:54 - Tomcat started on port(s): 8081 (http) with context path ''
-2024-06-13 10:25:54 - Started PizzariaApplication in 20.459 seconds (process running for 21.245)
-2024-06-13 10:26:01 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-13 10:26:01 - Initializing Servlet 'dispatcherServlet'
-2024-06-13 10:26:01 - Completed initialization in 1 ms
-2024-06-13 10:26:04 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/token": keycloak] with root cause
-java.net.UnknownHostException: keycloak
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at java.base/java.net.Socket.connect(Socket.java:583)
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:281)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:75)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:512)
-	at br.com.projeto.pizzaria.auth.TokenController.token(TokenController.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at br.com.projeto.pizzaria.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:40)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-06-13 10:28:43 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/token": keycloak] with root cause
-java.net.UnknownHostException: keycloak
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at java.base/java.net.Socket.connect(Socket.java:583)
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:281)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:75)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:512)
-	at br.com.projeto.pizzaria.auth.TokenController.token(TokenController.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at br.com.projeto.pizzaria.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:40)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-06-13 10:30:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-13 10:30:38 - HikariPool-1 - Shutdown initiated...
-2024-06-13 10:30:48 - Timed-out waiting for close connection executor to shutdown
-2024-06-13 10:30:48 - HikariPool-1 - Shutdown completed.
-2024-06-13 10:30:55 - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-13 10:30:55 - Starting PizzariaApplication using Java 17.0.8.1 with PID 32820 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
-2024-06-13 10:30:55 - No active profile set, falling back to 1 default profile: "default"
-2024-06-13 10:30:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-13 10:30:57 - Finished Spring Data repository scanning in 106 ms. Found 7 JPA repository interfaces.
-2024-06-13 10:30:59 - Tomcat initialized with port(s): 8081 (http)
-2024-06-13 10:30:59 - Initializing ProtocolHandler ["http-nio-8081"]
-2024-06-13 10:30:59 - Starting service [Tomcat]
-2024-06-13 10:30:59 - Starting Servlet engine: [Apache Tomcat/10.1.11]
-2024-06-13 10:31:00 - Initializing Spring embedded WebApplicationContext
-2024-06-13 10:31:00 - Root WebApplicationContext: initialization completed in 4592 ms
-2024-06-13 10:31:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-13 10:31:00 - HHH000412: Hibernate ORM core version 6.2.6.Final
-2024-06-13 10:31:00 - HHH000406: Using bytecode reflection optimizer
-2024-06-13 10:31:01 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-13 10:31:01 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-13 10:31:01 - HikariPool-1 - Starting...
-2024-06-13 10:31:03 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43f99817
-2024-06-13 10:31:03 - HikariPool-1 - Start completed.
-2024-06-13 10:31:04 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-13 10:31:04 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-13 10:31:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-13 10:31:06 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-13 10:31:08 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-13 10:31:08 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@446d7669, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e1f17e6, org.springframework.security.web.context.SecurityContextHolderFilter@7d97a1a0, org.springframework.security.web.header.HeaderWriterFilter@5d9b79a2, org.springframework.security.web.authentication.logout.LogoutFilter@21cb907d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70201785, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24c04958, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@249f95a2, org.springframework.security.web.access.ExceptionTranslationFilter@185b998d]
-2024-06-13 10:31:12 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-06-13 10:31:12 - Starting ProtocolHandler ["http-nio-8081"]
-2024-06-13 10:31:12 - Tomcat started on port(s): 8081 (http) with context path ''
-2024-06-13 10:31:12 - Started PizzariaApplication in 18.67 seconds (process running for 19.572)
-2024-06-13 10:31:18 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-13 10:31:18 - Initializing Servlet 'dispatcherServlet'
-2024-06-13 10:31:18 - Completed initialization in 1 ms
-2024-06-13 10:31:21 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/token": keycloak] with root cause
-java.net.UnknownHostException: keycloak
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at java.base/java.net.Socket.connect(Socket.java:583)
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:533)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:638)
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:281)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:75)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:512)
-	at br.com.projeto.pizzaria.auth.TokenController.token(TokenController.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at br.com.projeto.pizzaria.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:40)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-06-13 11:14:33 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-13 11:14:33 - HikariPool-1 - Shutdown initiated...
+2024-06-14 09:40:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 09:40:39 - HikariPool-1 - Shutdown initiated...
+2024-06-14 09:40:49 - Timed-out waiting for close connection executor to shutdown
+2024-06-14 09:40:49 - HikariPool-1 - Shutdown completed.
+2024-06-14 09:41:12 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-14 09:41:12 - Starting PizzariaApplication using Java 17.0.8.1 with PID 11384 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-14 09:41:12 - No active profile set, falling back to 1 default profile: "default"
+2024-06-14 09:41:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14 09:41:14 - Finished Spring Data repository scanning in 97 ms. Found 7 JPA repository interfaces.
+2024-06-14 09:41:16 - Tomcat initialized with port(s): 8081 (http)
+2024-06-14 09:41:16 - Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-14 09:41:16 - Starting service [Tomcat]
+2024-06-14 09:41:16 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-14 09:41:16 - Initializing Spring embedded WebApplicationContext
+2024-06-14 09:41:16 - Root WebApplicationContext: initialization completed in 3617 ms
+2024-06-14 09:41:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14 09:41:17 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-14 09:41:17 - HHH000406: Using bytecode reflection optimizer
+2024-06-14 09:41:17 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 09:41:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14 09:41:18 - HikariPool-1 - Starting...
+2024-06-14 09:41:20 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17f41739
+2024-06-14 09:41:20 - HikariPool-1 - Start completed.
+2024-06-14 09:41:21 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 09:41:22 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14 09:41:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 09:41:23 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-14 09:41:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14 09:41:27 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-14 09:41:27 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b3fff29, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f90b4c9, org.springframework.security.web.context.SecurityContextHolderFilter@87affb5, org.springframework.security.web.header.HeaderWriterFilter@2f0765f7, org.springframework.security.web.authentication.logout.LogoutFilter@2b284acc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@518e6d6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@280fa441, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16fc3be9, org.springframework.security.web.access.ExceptionTranslationFilter@5d39797a, org.springframework.security.web.access.intercept.AuthorizationFilter@40e28324]
+2024-06-14 09:41:29 - Starting ProtocolHandler ["http-nio-8081"]
+2024-06-14 09:41:29 - Tomcat started on port(s): 8081 (http) with context path ''
+2024-06-14 09:41:29 - Started PizzariaApplication in 16.893 seconds (process running for 17.481)
+2024-06-14 09:41:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 09:41:44 - Initializing Servlet 'dispatcherServlet'
+2024-06-14 09:41:44 - Completed initialization in 1 ms
+2024-06-14 10:57:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 10:57:20 - HikariPool-1 - Shutdown initiated...
+2024-06-14 10:57:30 - Timed-out waiting for close connection executor to shutdown
+2024-06-14 10:57:30 - HikariPool-1 - Shutdown completed.
+2024-06-14 10:57:41 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-14 10:57:41 - Starting PizzariaApplication using Java 17.0.8.1 with PID 32588 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-14 10:57:41 - No active profile set, falling back to 1 default profile: "default"
+2024-06-14 10:57:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14 10:57:43 - Finished Spring Data repository scanning in 110 ms. Found 7 JPA repository interfaces.
+2024-06-14 10:57:45 - Tomcat initialized with port(s): 8081 (http)
+2024-06-14 10:57:45 - Initializing ProtocolHandler ["http-nio-8081"]
+2024-06-14 10:57:45 - Starting service [Tomcat]
+2024-06-14 10:57:45 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-14 10:57:46 - Initializing Spring embedded WebApplicationContext
+2024-06-14 10:57:46 - Root WebApplicationContext: initialization completed in 4140 ms
+2024-06-14 10:57:47 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14 10:57:47 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-14 10:57:47 - HHH000406: Using bytecode reflection optimizer
+2024-06-14 10:57:47 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 10:57:47 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14 10:57:47 - HikariPool-1 - Starting...
+2024-06-14 10:57:49 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@653e7b
+2024-06-14 10:57:49 - HikariPool-1 - Start completed.
+2024-06-14 10:57:50 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 10:57:51 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14 10:57:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 10:57:53 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-14 10:57:54 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14 10:57:57 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-14 10:57:57 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72fb922c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@751df26c, org.springframework.security.web.context.SecurityContextHolderFilter@2295535f, org.springframework.security.web.header.HeaderWriterFilter@660b8572, org.springframework.security.web.authentication.logout.LogoutFilter@5b4433dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@177d7e98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75ba33b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4dc74211, org.springframework.security.web.access.ExceptionTranslationFilter@b517988, org.springframework.security.web.access.intercept.AuthorizationFilter@4f991f00]
+2024-06-14 10:57:58 - Starting ProtocolHandler ["http-nio-8081"]
+2024-06-14 10:57:58 - Tomcat started on port(s): 8081 (http) with context path ''
+2024-06-14 10:57:58 - Started PizzariaApplication in 17.424 seconds (process running for 18.572)
+2024-06-14 10:58:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 10:58:02 - Initializing Servlet 'dispatcherServlet'
+2024-06-14 10:58:02 - Completed initialization in 1 ms
+2024-06-14 10:58:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 10:58:23 - HikariPool-1 - Shutdown initiated...
+2024-06-14 10:58:25 - HikariPool-1 - Shutdown completed.
+2024-06-14 10:58:27 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-14 10:58:27 - Starting PizzariaApplication using Java 17.0.8.1 with PID 4292 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-14 10:58:27 - No active profile set, falling back to 1 default profile: "default"
+2024-06-14 10:58:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14 10:58:29 - Finished Spring Data repository scanning in 73 ms. Found 7 JPA repository interfaces.
+2024-06-14 10:58:31 - Tomcat initialized with port(s): 443 (https)
+2024-06-14 10:58:31 - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-14 10:58:31 - Starting service [Tomcat]
+2024-06-14 10:58:31 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-14 10:58:31 - Initializing Spring embedded WebApplicationContext
+2024-06-14 10:58:31 - Root WebApplicationContext: initialization completed in 3366 ms
+2024-06-14 10:58:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14 10:58:32 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-14 10:58:32 - HHH000406: Using bytecode reflection optimizer
+2024-06-14 10:58:32 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 10:58:32 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14 10:58:32 - HikariPool-1 - Starting...
+2024-06-14 10:58:34 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cd71ee2
+2024-06-14 10:58:34 - HikariPool-1 - Start completed.
+2024-06-14 10:58:35 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 10:58:36 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14 10:58:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 10:58:38 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-14 10:58:39 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14 10:58:43 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-14 10:58:43 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f8060ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@308a2eb0, org.springframework.security.web.context.SecurityContextHolderFilter@3f2731e5, org.springframework.security.web.header.HeaderWriterFilter@4c6a5712, org.springframework.security.web.authentication.logout.LogoutFilter@2680474c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a636c62, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e4d55a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1df1bd44, org.springframework.security.web.access.ExceptionTranslationFilter@752957da, org.springframework.security.web.access.intercept.AuthorizationFilter@6de6467a]
+2024-06-14 10:58:44 - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-14 10:58:44 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
+2024-06-14 10:58:44 - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-14 10:58:44 - Started PizzariaApplication in 17.046 seconds (process running for 17.65)
+2024-06-14 11:38:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 11:38:55 - Initializing Servlet 'dispatcherServlet'
+2024-06-14 11:38:55 - Completed initialization in 29 ms
+2024-06-14 11:47:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 11:47:38 - HikariPool-1 - Shutdown initiated...
+2024-06-14 11:47:48 - Timed-out waiting for close connection executor to shutdown
+2024-06-14 11:47:48 - HikariPool-1 - Shutdown completed.
+2024-06-14 11:47:54 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-14 11:47:54 - Starting PizzariaApplication using Java 17.0.8.1 with PID 564 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-14 11:47:54 - No active profile set, falling back to 1 default profile: "default"
+2024-06-14 11:47:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-14 11:47:56 - Finished Spring Data repository scanning in 153 ms. Found 7 JPA repository interfaces.
+2024-06-14 11:47:58 - Tomcat initialized with port(s): 443 (https)
+2024-06-14 11:47:58 - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-14 11:47:58 - Starting service [Tomcat]
+2024-06-14 11:47:58 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-14 11:47:58 - Initializing Spring embedded WebApplicationContext
+2024-06-14 11:47:58 - Root WebApplicationContext: initialization completed in 4405 ms
+2024-06-14 11:47:59 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-14 11:47:59 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-14 11:47:59 - HHH000406: Using bytecode reflection optimizer
+2024-06-14 11:47:59 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 11:47:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-14 11:48:00 - HikariPool-1 - Starting...
+2024-06-14 11:48:02 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2299f6d7
+2024-06-14 11:48:02 - HikariPool-1 - Start completed.
+2024-06-14 11:48:03 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-14 11:48:04 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-14 11:48:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 11:48:06 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-14 11:48:07 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-14 11:48:10 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-14 11:48:10 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35984172, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746fda68, org.springframework.security.web.context.SecurityContextHolderFilter@1dbb3001, org.springframework.security.web.header.HeaderWriterFilter@1342c6e1, org.springframework.security.web.authentication.logout.LogoutFilter@2cf88ae1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@718aa49a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4992e34f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77cac3b, org.springframework.security.web.access.ExceptionTranslationFilter@3f41a1f3, org.springframework.security.web.access.intercept.AuthorizationFilter@14eaab92]
+2024-06-14 11:48:11 - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-14 11:48:12 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
+2024-06-14 11:48:12 - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-14 11:48:12 - Started PizzariaApplication in 18.813 seconds (process running for 19.643)
+2024-06-14 11:48:18 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-14 11:48:18 - Initializing Servlet 'dispatcherServlet'
+2024-06-14 11:48:18 - Completed initialization in 1 ms
+2024-06-14 11:50:14 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-14 11:50:14 - HikariPool-1 - Shutdown initiated...
+2024-06-14 11:50:16 - HikariPool-1 - Shutdown completed.

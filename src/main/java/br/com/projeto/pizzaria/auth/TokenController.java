@@ -17,29 +17,34 @@ public class TokenController {
     @GetMapping("/admin")
     @Secured({"ADMIN"})
     public String admin () {
-        String mensagem = "voce é um admin";
-
-        return mensagem;
+        return "You are an admin";
     }
+
     @PostMapping("/login")
     public ResponseEntity<String> token (@RequestBody User user){
 
         HttpHeaders headers = new HttpHeaders();
         RestTemplate rt = new RestTemplate();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
         MultiValueMap<String, String> formData = new LinkedMultiValueMap<>();
         formData.add("client_id", user.clientId);
         formData.add("username", user.username);
         formData.add("password", user.password);
         formData.add("grant_type", user.grantType);
-        formData.add("client_secret", user.secret);
-        HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<MultiValueMap<String, String>>(formData, headers);
+        if (user.secret != null && !user.secret.isEmpty()) {
+            formData.add("client_secret", user.secret);
+        }
 
-        var result = rt.postForEntity( "http://keycloak:8080/realms/pizzariaGLN/protocol/openid-connect/token",entity, String.class);
-        return  result;
+        HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(formData, headers);
+
+        ResponseEntity<String> result = rt.postForEntity(
+                "http://localhost:8080/realms/pizzariaGLN/protocol/openid-connect/token",
+                entity,
+                String.class);
+
+        return result;
     }
 
-    public record User ( String password, String clientId, String grantType, String username, String secret) { }
-
-
+    public static record User(String password, String clientId, String grantType, String username, String secret) { }
 }

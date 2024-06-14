@@ -1,9 +1,10 @@
-
-jwt:
-  auth:
-    converter:
-      resource-id: pizzaria_admin
-      princicple-attribute: preferred_username
+keycloak:
+  realm: pizzariaGLN
+  auth-server-url: http://keycloak:8080/auth
+  resource: pizzaria_admin
+#  credentials:
+#    secret: YOUR_CLIENT_SECRET
+  principal-attribute: preferred_username
 
 spring:
   security:
@@ -18,10 +19,6 @@ spring:
     generate-ddl: true
     hibernate:
       ddl-auto: validate
-      # Uncomment the appropriate line for your desired behavior
-      # ddl-auto: update
-      # ddl-auto: create
-      # ddl-auto: create-drop
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -41,10 +38,10 @@ logging:
     name: application.log
 
 server:
-  port: 8081
-#  ssl:
-#    enabled: true
-#    key-store: classpath:keystore.p12
-#    key-store-password: senha123
-#    key-store-type: PKCS12
-#    key-alias: pizzariagln
+  port: 443
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: senha123
+    key-store-type: PKCS12
+    key-alias: pizzariagln
