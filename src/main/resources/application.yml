@@ -4,12 +4,7 @@ keycloak:
   resource: pizzaria_admin
   credentials:
     secret: adppnSe2hjv6wDDKhTjKGTPUIwbKhrDc
-
-jwt:
-  auth:
-    converter:
-      resource-id: pizzaria_admin
-      princicple-attribute: user_pizzaria_admin
+  use-resource-role-mappings: true
 
 spring:
   security:
@@ -18,6 +13,7 @@ spring:
         jwt:
           issuer-uri: http://localhost:8080/realms/pizzariaGLN
           jwk-set-uri: http://localhost:8080/realms/pizzariaGLN/protocol/openid-connect/certs
+
   jpa:
     database: postgresql
     show-sql: true
@@ -27,20 +23,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
   datasource:
     driver-class-name: org.postgresql.Driver
     platform: postgres
     url: jdbc:postgresql://pizzariagln.c96u8sisi93d.us-east-2.rds.amazonaws.com:5432/pizzaria
     username: pizzaria_gln
     password: ay6a&2Wa2;LVL!e
-
-security:
-  jwt:
-    chave-secret: ${JWT_SECRET:cGFvZGVxdWVpam8=}
-
-logging:
-  file:
-    name: application.log
 
 server:
   port: 443
@@ -50,3 +39,7 @@ server:
     key-store-password: senha123
     key-store-type: PKCS12
     key-alias: pizzariagln
+
+logging:
+  file:
+    name: application.log

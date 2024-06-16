@@ -1,36 +1,27 @@
 package br.com.projeto.pizzaria.config;
 
-import java.util.Arrays;
-
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.keycloak.adapters.springsecurity.KeycloakConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 
-import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
+import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
-@RequiredArgsConstructor
+@KeycloakConfiguration
 public class SecurityConfig {
-
-    private final JwtAuthenticationFilter jwtAuthFilter;
-    private final AuthenticationProvider authenticationProvider;
-    private final JwtConverter jwtAuthConverter;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -38,19 +29,16 @@ public class SecurityConfig {
                 .csrf().disable()
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.POST, "/api/login").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/api/signup").permitAll()
                         .requestMatchers(HttpMethod.POST, "/token/login").permitAll()
                         .anyRequest().authenticated()
                 )
                 .oauth2ResourceServer(oauth2 -> oauth2
-                        .jwt(jwt -> jwt
-                                .jwtAuthenticationConverter(jwtAuthConverter)
-                        )
+                        .jwt()
                 )
                 .sessionManagement(session -> session
-                        .sessionCreationPolicy(STATELESS)
-                )
-                .authenticationProvider(authenticationProvider)
-                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                );
 
         return http.build();
     }

@@ -10,19 +10,22 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
-@RequestMapping ("/token")
+@RequestMapping("/token")
 @RestController
 public class TokenController {
 
     @GetMapping("/admin")
     @Secured({"ADMIN"})
-    public String admin () {
+    public String admin() {
         return "You are an admin";
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> token (@RequestBody User user){
+    public ResponseEntity<String> token(@RequestBody User user) {
+        return getTokenResponse(user);
+    }
 
+    public static ResponseEntity<String> getTokenResponse(User user) {
         HttpHeaders headers = new HttpHeaders();
         RestTemplate rt = new RestTemplate();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -38,13 +41,11 @@ public class TokenController {
 
         HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(formData, headers);
 
-        ResponseEntity<String> result = rt.postForEntity(
+        return rt.postForEntity(
                 "http://localhost:8080/realms/pizzariaGLN/protocol/openid-connect/token",
                 entity,
                 String.class);
-
-        return result;
     }
 
-    public static record User(String password, String clientId, String grantType, String username, String secret) { }
+    public static record User(String password, String clientId, String grantType, String username, String secret) {}
 }
