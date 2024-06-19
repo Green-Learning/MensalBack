@@ -1,5 +1,16 @@
+server:
+  port: 443
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: senha123
+    key-store-type: PKCS12
+    key-alias: pizzariagln
+    trust-store: classpath:truststore.jks
+    trust-store-password: changeit
+
 keycloak:
-  auth-server-url: http://localhost:8080/auth
+  auth-server-url: https://54.167.145.183:8443/auth
   realm: pizzariaGLN
   resource: pizzaria_admin
   credentials:
@@ -11,8 +22,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8080/realms/pizzariaGLN
-          jwk-set-uri: http://localhost:8080/realms/pizzariaGLN/protocol/openid-connect/certs
+          issuer-uri: https://54.167.145.183:8443/realms/pizzariaGLN
+          jwk-set-uri: https://54.167.145.183:8443/realms/pizzariaGLN/protocol/openid-connect/certs
 
   jpa:
     database: postgresql
@@ -30,15 +41,6 @@ spring:
     url: jdbc:postgresql://pizzariagln.c96u8sisi93d.us-east-2.rds.amazonaws.com:5432/pizzaria
     username: pizzaria_gln
     password: ay6a&2Wa2;LVL!e
-
-server:
-  port: 443
-  ssl:
-    enabled: true
-    key-store: classpath:keystore.p12
-    key-store-password: senha123
-    key-store-type: PKCS12
-    key-alias: pizzariagln
 
 logging:
   file:

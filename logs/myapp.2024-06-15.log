@@ -5868,92 +5868,93 @@ java.lang.RuntimeException: Keycloak authentication failed
 2024-06-15 21:14:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-15 21:14:10 - HikariPool-1 - Shutdown initiated...
 2024-06-15 21:14:12 - HikariPool-1 - Shutdown completed.
-2024-06-19 13:20:51 - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-19 13:20:51 - Starting PizzariaApplication using Java 17.0.8.1 with PID 37232 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
-2024-06-19 13:20:51 - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 13:20:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 13:20:53 - Finished Spring Data repository scanning in 71 ms. Found 7 JPA repository interfaces.
-2024-06-19 13:20:54 - Tomcat initialized with port(s): 443 (https)
-2024-06-19 13:20:54 - Initializing ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 13:20:54 - Starting service [Tomcat]
-2024-06-19 13:20:54 - Starting Servlet engine: [Apache Tomcat/10.1.11]
-2024-06-19 13:20:55 - Initializing Spring embedded WebApplicationContext
-2024-06-19 13:20:55 - Root WebApplicationContext: initialization completed in 3617 ms
-2024-06-19 13:20:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 13:20:55 - HHH000412: Hibernate ORM core version 6.2.6.Final
-2024-06-19 13:20:55 - HHH000406: Using bytecode reflection optimizer
-2024-06-19 13:20:56 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 13:20:56 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 13:20:56 - HikariPool-1 - Starting...
-2024-06-19 13:20:58 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@188bf4d8
-2024-06-19 13:20:58 - HikariPool-1 - Start completed.
-2024-06-19 13:20:59 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 13:21:00 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-19 13:21:01 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 13:21:02 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-19 13:21:03 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 13:21:05 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-06-19 13:21:05 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3669d7ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@506d7831, org.springframework.security.web.context.SecurityContextHolderFilter@1a8b10dd, org.springframework.security.web.header.HeaderWriterFilter@2919976e, org.springframework.security.web.authentication.logout.LogoutFilter@7d8fcde8, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@7c7caff1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29f0e941, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e6c69f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@497746ea, org.springframework.security.web.session.SessionManagementFilter@3aef4650, org.springframework.security.web.access.ExceptionTranslationFilter@6740b169, org.springframework.security.web.access.intercept.AuthorizationFilter@5f19da2c]
-2024-06-19 13:21:06 - Starting ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 13:21:06 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
-2024-06-19 13:21:06 - Tomcat started on port(s): 443 (https) with context path ''
-2024-06-19 13:21:06 - Started PizzariaApplication in 16.004 seconds (process running for 16.917)
-2024-06-19 13:21:31 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 13:21:31 - Initializing Servlet 'dispatcherServlet'
-2024-06-19 13:21:31 - Completed initialization in 1 ms
-2024-06-19 13:21:32 - Received login request for email: teste@gmail.com
-2024-06-19 13:21:32 - Authenticating user with Keycloak: teste@gmail.com
-2024-06-19 13:21:32 - Keycloak authentication successful for user: teste@gmail.com
-2024-06-19 13:21:32 - User authenticated, generating JWT token
-2024-06-19 13:21:32 - Login successful for email: teste@gmail.com
-2024-06-19 13:49:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 13:49:23 - HikariPool-1 - Shutdown initiated...
-2024-06-19 13:49:33 - Timed-out waiting for close connection executor to shutdown
-2024-06-19 13:49:33 - HikariPool-1 - Shutdown completed.
-2024-06-19 13:49:36 - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-19 13:49:36 - Starting PizzariaApplication using Java 17.0.8.1 with PID 36108 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
-2024-06-19 13:49:36 - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 13:49:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 13:49:38 - Finished Spring Data repository scanning in 59 ms. Found 7 JPA repository interfaces.
-2024-06-19 13:49:40 - Tomcat initialized with port(s): 443 (https)
-2024-06-19 13:49:40 - Initializing ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 13:49:40 - Starting service [Tomcat]
-2024-06-19 13:49:40 - Starting Servlet engine: [Apache Tomcat/10.1.11]
-2024-06-19 13:49:40 - Initializing Spring embedded WebApplicationContext
-2024-06-19 13:49:40 - Root WebApplicationContext: initialization completed in 3251 ms
-2024-06-19 13:49:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 13:49:40 - HHH000412: Hibernate ORM core version 6.2.6.Final
-2024-06-19 13:49:40 - HHH000406: Using bytecode reflection optimizer
-2024-06-19 13:49:41 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 13:49:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 13:49:41 - HikariPool-1 - Starting...
-2024-06-19 13:49:43 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2dd2ff87
-2024-06-19 13:49:43 - HikariPool-1 - Start completed.
-2024-06-19 13:49:44 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 13:49:45 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-19 13:49:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 13:49:47 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-19 13:49:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 13:49:52 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-06-19 13:49:52 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3669d7ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@506d7831, org.springframework.security.web.context.SecurityContextHolderFilter@1a8b10dd, org.springframework.security.web.header.HeaderWriterFilter@2919976e, org.springframework.security.web.authentication.logout.LogoutFilter@7d8fcde8, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@7c7caff1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29f0e941, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e6c69f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@497746ea, org.springframework.security.web.session.SessionManagementFilter@3aef4650, org.springframework.security.web.access.ExceptionTranslationFilter@6740b169, org.springframework.security.web.access.intercept.AuthorizationFilter@5f19da2c]
-2024-06-19 13:49:53 - Starting ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 13:49:53 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
-2024-06-19 13:49:53 - Tomcat started on port(s): 443 (https) with context path ''
-2024-06-19 13:49:53 - Started PizzariaApplication in 17.333 seconds (process running for 17.737)
-2024-06-19 14:16:10 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 14:16:10 - Initializing Servlet 'dispatcherServlet'
-2024-06-19 14:16:10 - Completed initialization in 3 ms
-2024-06-19 14:16:10 - Received login request for email: 8xu7qbl3e@mozmail.com
-2024-06-19 14:16:10 - Authenticating user with Keycloak: 8xu7qbl3e@mozmail.com
-2024-06-19 14:16:11 - Error during login for email: 8xu7qbl3e@mozmail.com
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://54.167.145.183:8443/realms/pizzariaGLN/protocol/openid-connect/token": PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:512)
-	at br.com.projeto.pizzaria.auth.TokenController.getTokenResponse(TokenController.java:44)
-	at br.com.projeto.pizzaria.service.LoginService.logar(LoginService.java:55)
-	at br.com.projeto.pizzaria.controller.LoginController.logar(LoginController.java:30)
+2024-06-15 21:14:18 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-15 21:14:18 - Starting PizzariaApplication using Java 17.0.8.1 with PID 10448 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-15 21:14:18 - No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:14:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-15 21:14:20 - Finished Spring Data repository scanning in 77 ms. Found 7 JPA repository interfaces.
+2024-06-15 21:14:21 - Tomcat initialized with port(s): 443 (https)
+2024-06-15 21:14:21 - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 21:14:21 - Starting service [Tomcat]
+2024-06-15 21:14:21 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-15 21:14:22 - Initializing Spring embedded WebApplicationContext
+2024-06-15 21:14:22 - Root WebApplicationContext: initialization completed in 3750 ms
+2024-06-15 21:14:22 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-15 21:14:23 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-15 21:14:23 - HHH000406: Using bytecode reflection optimizer
+2024-06-15 21:14:23 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 21:14:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-15 21:14:23 - HikariPool-1 - Starting...
+2024-06-15 21:14:25 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b3bb287
+2024-06-15 21:14:25 - HikariPool-1 - Start completed.
+2024-06-15 21:14:26 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 21:14:27 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-15 21:14:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 21:14:28 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-15 21:14:30 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-15 21:14:32 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-15 21:14:33 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5513982, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22351330, org.springframework.security.web.context.SecurityContextHolderFilter@7321f698, org.springframework.security.web.header.HeaderWriterFilter@70798698, org.springframework.security.web.authentication.logout.LogoutFilter@1c7094eb, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@75eed00f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6dace32a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c2e7a83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2158d1d1, org.springframework.security.web.session.SessionManagementFilter@7474bc14, org.springframework.security.web.access.ExceptionTranslationFilter@4d4ae76, org.springframework.security.web.access.intercept.AuthorizationFilter@4817bd3]
+2024-06-15 21:14:34 - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 21:14:34 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
+2024-06-15 21:14:34 - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-15 21:14:34 - Started PizzariaApplication in 17.373 seconds (process running for 18.016)
+2024-06-15 21:15:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-15 21:15:02 - Initializing Servlet 'dispatcherServlet'
+2024-06-15 21:15:02 - Completed initialization in 2 ms
+2024-06-15 21:15:02 - Received login request for email: teste@gmail.com
+2024-06-15 21:15:02 - Authenticating user with Keycloak: teste@gmail.com
+2024-06-15 21:15:03 - Keycloak authentication successful for user: teste@gmail.com
+2024-06-15 21:15:03 - User authenticated, generating JWT token
+2024-06-15 21:15:03 - Login successful for email: teste@gmail.com
+2024-06-15 21:20:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 21:20:49 - HikariPool-1 - Shutdown initiated...
+2024-06-15 21:20:59 - Timed-out waiting for close connection executor to shutdown
+2024-06-15 21:20:59 - HikariPool-1 - Shutdown completed.
+2024-06-15 21:21:03 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-15 21:21:03 - Starting PizzariaApplication using Java 17.0.8.1 with PID 26544 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-15 21:21:03 - No active profile set, falling back to 1 default profile: "default"
+2024-06-15 21:21:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-15 21:21:05 - Finished Spring Data repository scanning in 98 ms. Found 7 JPA repository interfaces.
+2024-06-15 21:21:07 - Tomcat initialized with port(s): 443 (https)
+2024-06-15 21:21:07 - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 21:21:07 - Starting service [Tomcat]
+2024-06-15 21:21:07 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-15 21:21:08 - Initializing Spring embedded WebApplicationContext
+2024-06-15 21:21:08 - Root WebApplicationContext: initialization completed in 4761 ms
+2024-06-15 21:21:09 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-15 21:21:09 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-15 21:21:09 - HHH000406: Using bytecode reflection optimizer
+2024-06-15 21:21:09 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 21:21:10 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-15 21:21:10 - HikariPool-1 - Starting...
+2024-06-15 21:21:12 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b5aa48b
+2024-06-15 21:21:12 - HikariPool-1 - Start completed.
+2024-06-15 21:21:13 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 21:21:13 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-15 21:21:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 21:21:15 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-15 21:21:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-15 21:21:19 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-15 21:21:20 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@153f6a67, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b3c2e59, org.springframework.security.web.context.SecurityContextHolderFilter@70fdecff, org.springframework.security.web.header.HeaderWriterFilter@7669fc90, org.springframework.security.web.authentication.logout.LogoutFilter@22351330, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@6b732d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22a05923, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3aef4650, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64a2966a, org.springframework.security.web.session.SessionManagementFilter@43493a5d, org.springframework.security.web.access.ExceptionTranslationFilter@351623d, org.springframework.security.web.access.intercept.AuthorizationFilter@4f5c55a8]
+2024-06-15 21:21:20 - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 21:21:21 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
+2024-06-15 21:21:21 - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-15 21:21:21 - Started PizzariaApplication in 18.626 seconds (process running for 19.335)
+2024-06-15 21:21:26 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-15 21:21:26 - Initializing Servlet 'dispatcherServlet'
+2024-06-15 21:21:26 - Completed initialization in 1 ms
+2024-06-15 21:21:26 - Received signup request for email: newuser@example.com
+2024-06-15 21:21:26 - Creating user in Keycloak: newuser@example.com
+2024-06-15 21:21:27 - Error during signup for email: newuser@example.com
+javax.ws.rs.ProcessingException: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.filterRequest(ClientInvocation.java:592)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.invoke(ClientInvocation.java:440)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:149)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy4/jdk.proxy4.$Proxy219.create(Unknown Source)
+	at br.com.projeto.pizzaria.service.SignupService.signup(SignupService.java:65)
+	at br.com.projeto.pizzaria.controller.SignupController.signup(SignupController.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6085,127 +6086,74 @@ org.springframework.web.client.ResourceAccessException: I/O error on POST reques
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
-	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
-	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
-	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458)
-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
-	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
-	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
-	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:589)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:75)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	... 136 common frames omitted
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
-	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
-	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
-	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231)
-	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
-	... 154 common frames omitted
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
-	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
-	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
-	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
-	... 159 common frames omitted
-2024-06-19 14:16:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 14:16:18 - HikariPool-1 - Shutdown initiated...
-2024-06-19 14:16:28 - Timed-out waiting for close connection executor to shutdown
-2024-06-19 14:16:28 - HikariPool-1 - Shutdown completed.
-2024-06-19 14:16:31 - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-19 14:16:31 - Starting PizzariaApplication using Java 17.0.8.1 with PID 35556 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
-2024-06-19 14:16:31 - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 14:16:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 14:16:34 - Finished Spring Data repository scanning in 246 ms. Found 7 JPA repository interfaces.
-2024-06-19 14:16:36 - Tomcat initialized with port(s): 443 (https)
-2024-06-19 14:16:36 - Initializing ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 14:16:36 - Starting service [Tomcat]
-2024-06-19 14:16:36 - Starting Servlet engine: [Apache Tomcat/10.1.11]
-2024-06-19 14:16:37 - Initializing Spring embedded WebApplicationContext
-2024-06-19 14:16:37 - Root WebApplicationContext: initialization completed in 5219 ms
-2024-06-19 14:16:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 14:16:38 - HHH000412: Hibernate ORM core version 6.2.6.Final
-2024-06-19 14:16:38 - HHH000406: Using bytecode reflection optimizer
-2024-06-19 14:16:38 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 14:16:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 14:16:38 - HikariPool-1 - Starting...
-2024-06-19 14:16:41 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@625f5712
-2024-06-19 14:16:41 - HikariPool-1 - Start completed.
-2024-06-19 14:16:42 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 14:16:42 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-19 14:16:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 14:16:44 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-19 14:16:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 14:16:49 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-06-19 14:16:49 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d8fcde8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12620e98, org.springframework.security.web.context.SecurityContextHolderFilter@42ffabb, org.springframework.security.web.header.HeaderWriterFilter@3f693a39, org.springframework.security.web.authentication.logout.LogoutFilter@1a8b10dd, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@7414167a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10009505, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8dbe78f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46916d68, org.springframework.security.web.session.SessionManagementFilter@40c7cea8, org.springframework.security.web.access.ExceptionTranslationFilter@34672fb, org.springframework.security.web.access.intercept.AuthorizationFilter@42927b0a]
-2024-06-19 14:16:50 - Starting ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 14:16:50 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
-2024-06-19 14:16:50 - Tomcat started on port(s): 443 (https) with context path ''
-2024-06-19 14:16:50 - Started PizzariaApplication in 19.49 seconds (process running for 20.302)
-2024-06-19 14:22:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 14:22:49 - HikariPool-1 - Shutdown initiated...
-2024-06-19 14:22:59 - Timed-out waiting for close connection executor to shutdown
-2024-06-19 14:22:59 - HikariPool-1 - Shutdown completed.
-2024-06-19 14:23:02 - HV000001: Hibernate Validator 8.0.1.Final
-2024-06-19 14:23:02 - Starting PizzariaApplication using Java 17.0.8.1 with PID 43184 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
-2024-06-19 14:23:02 - No active profile set, falling back to 1 default profile: "default"
-2024-06-19 14:23:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-19 14:23:04 - Finished Spring Data repository scanning in 75 ms. Found 7 JPA repository interfaces.
-2024-06-19 14:23:06 - Tomcat initialized with port(s): 443 (https)
-2024-06-19 14:23:06 - Initializing ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 14:23:06 - Starting service [Tomcat]
-2024-06-19 14:23:06 - Starting Servlet engine: [Apache Tomcat/10.1.11]
-2024-06-19 14:23:06 - Initializing Spring embedded WebApplicationContext
-2024-06-19 14:23:06 - Root WebApplicationContext: initialization completed in 3953 ms
-2024-06-19 14:23:07 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-19 14:23:07 - HHH000412: Hibernate ORM core version 6.2.6.Final
-2024-06-19 14:23:07 - HHH000406: Using bytecode reflection optimizer
-2024-06-19 14:23:07 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 14:23:08 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-19 14:23:08 - HikariPool-1 - Starting...
-2024-06-19 14:23:10 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6528d339
-2024-06-19 14:23:10 - HikariPool-1 - Start completed.
-2024-06-19 14:23:11 - HHH000021: Bytecode provider name : bytebuddy
-2024-06-19 14:23:11 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-06-19 14:23:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-19 14:23:13 - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-06-19 14:23:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-19 14:23:17 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2024-06-19 14:23:17 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@506d7831, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@497746ea, org.springframework.security.web.context.SecurityContextHolderFilter@5a96081a, org.springframework.security.web.header.HeaderWriterFilter@55cbbf15, org.springframework.security.web.authentication.logout.LogoutFilter@12620e98, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@460818c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e6c69f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40a923e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f3f8115, org.springframework.security.web.session.SessionManagementFilter@25eadfe6, org.springframework.security.web.access.ExceptionTranslationFilter@71897380, org.springframework.security.web.access.intercept.AuthorizationFilter@7f62fa28]
-2024-06-19 14:23:18 - Starting ProtocolHandler ["https-jsse-nio-443"]
-2024-06-19 14:23:18 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
-2024-06-19 14:23:18 - Tomcat started on port(s): 443 (https) with context path ''
-2024-06-19 14:23:18 - Started PizzariaApplication in 17.027 seconds (process running for 17.805)
-2024-06-19 14:23:25 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-19 14:23:25 - Initializing Servlet 'dispatcherServlet'
-2024-06-19 14:23:25 - Completed initialization in 1 ms
-2024-06-19 14:23:26 - Received login request for email: 8xu7qbl3e@mozmail.com
-2024-06-19 14:23:26 - Authenticating user with Keycloak: 8xu7qbl3e@mozmail.com
-2024-06-19 14:23:26 - Error during login for email: 8xu7qbl3e@mozmail.com
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://54.167.145.183:8443/realms/pizzariaGLN/protocol/openid-connect/token": PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:512)
-	at br.com.projeto.pizzaria.auth.TokenController.getTokenResponse(TokenController.java:44)
-	at br.com.projeto.pizzaria.service.LoginService.logar(LoginService.java:55)
-	at br.com.projeto.pizzaria.controller.LoginController.logar(LoginController.java:30)
+Caused by: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:226)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy4/jdk.proxy4.$Proxy210.grantToken(Unknown Source)
+	at org.keycloak.admin.client.token.TokenManager.grantToken(TokenManager.java:90)
+	at org.keycloak.admin.client.token.TokenManager.getAccessToken(TokenManager.java:70)
+	at org.keycloak.admin.client.token.TokenManager.getAccessTokenString(TokenManager.java:65)
+	at org.keycloak.admin.client.resource.BearerAuthFilter.filter(BearerAuthFilter.java:52)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.filterRequest(ClientInvocation.java:579)
+	... 138 common frames omitted
+2024-06-15 21:24:03 - Received login request for email: teste@gmail.com
+2024-06-15 21:24:03 - Authenticating user with Keycloak: teste@gmail.com
+2024-06-15 21:24:03 - Keycloak authentication successful for user: teste@gmail.com
+2024-06-15 21:24:04 - User authenticated, generating JWT token
+2024-06-15 21:24:04 - Login successful for email: teste@gmail.com
+2024-06-15 22:16:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 22:16:37 - HikariPool-1 - Shutdown initiated...
+2024-06-15 22:16:47 - Timed-out waiting for close connection executor to shutdown
+2024-06-15 22:16:47 - HikariPool-1 - Shutdown completed.
+2024-06-15 22:16:52 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-15 22:16:52 - Starting PizzariaApplication using Java 17.0.8.1 with PID 31656 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-15 22:16:52 - No active profile set, falling back to 1 default profile: "default"
+2024-06-15 22:16:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-15 22:16:54 - Finished Spring Data repository scanning in 92 ms. Found 7 JPA repository interfaces.
+2024-06-15 22:16:56 - Tomcat initialized with port(s): 443 (https)
+2024-06-15 22:16:56 - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 22:16:56 - Starting service [Tomcat]
+2024-06-15 22:16:56 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-15 22:16:56 - Initializing Spring embedded WebApplicationContext
+2024-06-15 22:16:56 - Root WebApplicationContext: initialization completed in 3931 ms
+2024-06-15 22:16:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-15 22:16:57 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-15 22:16:57 - HHH000406: Using bytecode reflection optimizer
+2024-06-15 22:16:57 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 22:16:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-15 22:16:57 - HikariPool-1 - Starting...
+2024-06-15 22:16:59 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d3f8661
+2024-06-15 22:16:59 - HikariPool-1 - Start completed.
+2024-06-15 22:17:00 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 22:17:01 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-15 22:17:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 22:17:02 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-15 22:17:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-15 22:17:06 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-15 22:17:06 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@618cfd1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ec3c680, org.springframework.security.web.context.SecurityContextHolderFilter@dcdf733, org.springframework.security.web.header.HeaderWriterFilter@10009505, org.springframework.security.web.authentication.logout.LogoutFilter@669f2128, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@15f4f652, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60319a00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43493a5d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cb7eb6c, org.springframework.security.web.session.SessionManagementFilter@2919976e, org.springframework.security.web.access.ExceptionTranslationFilter@42ffabb, org.springframework.security.web.access.intercept.AuthorizationFilter@12620e98]
+2024-06-15 22:17:07 - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 22:17:07 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
+2024-06-15 22:17:07 - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-15 22:17:07 - Started PizzariaApplication in 15.898 seconds (process running for 16.547)
+2024-06-15 22:17:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-15 22:17:11 - Initializing Servlet 'dispatcherServlet'
+2024-06-15 22:17:11 - Completed initialization in 2 ms
+2024-06-15 22:17:11 - Received signup request for email: newuser@example.com
+2024-06-15 22:17:11 - Creating user in Keycloak: newuser@example.com
+2024-06-15 22:17:12 - Error during signup for email: newuser@example.com
+javax.ws.rs.ProcessingException: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.filterRequest(ClientInvocation.java:592)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.invoke(ClientInvocation.java:440)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:149)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy4/jdk.proxy4.$Proxy219.create(Unknown Source)
+	at br.com.projeto.pizzaria.service.SignupService.signup(SignupService.java:68)
+	at br.com.projeto.pizzaria.controller.SignupController.signup(SignupController.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6337,56 +6285,69 @@ org.springframework.web.client.ResourceAccessException: I/O error on POST reques
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
-	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
-	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
-	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458)
-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
-	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
-	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
-	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:589)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:75)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	... 136 common frames omitted
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
-	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
-	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
-	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231)
-	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
-	... 154 common frames omitted
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
-	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
-	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
-	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
-	... 159 common frames omitted
-2024-06-19 14:23:46 - Received login request for email: 8xu7qbl3e@mozmail.com
-2024-06-19 14:23:46 - Authenticating user with Keycloak: 8xu7qbl3e@mozmail.com
-2024-06-19 14:23:46 - Error during login for email: 8xu7qbl3e@mozmail.com
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://54.167.145.183:8443/realms/pizzariaGLN/protocol/openid-connect/token": PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:888)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:868)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:764)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:512)
-	at br.com.projeto.pizzaria.auth.TokenController.getTokenResponse(TokenController.java:44)
-	at br.com.projeto.pizzaria.service.LoginService.logar(LoginService.java:55)
-	at br.com.projeto.pizzaria.controller.LoginController.logar(LoginController.java:30)
+Caused by: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:226)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy4/jdk.proxy4.$Proxy210.grantToken(Unknown Source)
+	at org.keycloak.admin.client.token.TokenManager.grantToken(TokenManager.java:90)
+	at org.keycloak.admin.client.token.TokenManager.getAccessToken(TokenManager.java:70)
+	at org.keycloak.admin.client.token.TokenManager.getAccessTokenString(TokenManager.java:65)
+	at org.keycloak.admin.client.resource.BearerAuthFilter.filter(BearerAuthFilter.java:52)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.filterRequest(ClientInvocation.java:579)
+	... 138 common frames omitted
+2024-06-15 22:27:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 22:27:24 - HikariPool-1 - Shutdown initiated...
+2024-06-15 22:27:34 - Timed-out waiting for close connection executor to shutdown
+2024-06-15 22:27:34 - HikariPool-1 - Shutdown completed.
+2024-06-15 22:27:37 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-15 22:27:37 - Starting PizzariaApplication using Java 17.0.8.1 with PID 9376 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-15 22:27:37 - No active profile set, falling back to 1 default profile: "default"
+2024-06-15 22:27:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-15 22:27:39 - Finished Spring Data repository scanning in 93 ms. Found 7 JPA repository interfaces.
+2024-06-15 22:27:41 - Tomcat initialized with port(s): 443 (https)
+2024-06-15 22:27:41 - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 22:27:41 - Starting service [Tomcat]
+2024-06-15 22:27:41 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-15 22:27:41 - Initializing Spring embedded WebApplicationContext
+2024-06-15 22:27:41 - Root WebApplicationContext: initialization completed in 3851 ms
+2024-06-15 22:27:42 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-15 22:27:42 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-15 22:27:42 - HHH000406: Using bytecode reflection optimizer
+2024-06-15 22:27:43 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 22:27:43 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-15 22:27:43 - HikariPool-1 - Starting...
+2024-06-15 22:27:45 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@756200d1
+2024-06-15 22:27:45 - HikariPool-1 - Start completed.
+2024-06-15 22:27:46 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 22:27:47 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-15 22:27:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 22:27:49 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-15 22:27:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-15 22:27:53 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-15 22:27:53 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4cb3e76c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64d711b0, org.springframework.security.web.context.SecurityContextHolderFilter@30e787e2, org.springframework.security.web.header.HeaderWriterFilter@21df2968, org.springframework.security.web.authentication.logout.LogoutFilter@4f5c55a8, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@c04a1ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a6732bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35b799c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4df4f611, org.springframework.security.web.session.SessionManagementFilter@40a923e6, org.springframework.security.web.access.ExceptionTranslationFilter@60319a00, org.springframework.security.web.access.intercept.AuthorizationFilter@46110b82]
+2024-06-15 22:27:54 - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 22:27:54 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
+2024-06-15 22:27:54 - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-15 22:27:54 - Started PizzariaApplication in 17.344 seconds (process running for 17.734)
+2024-06-15 22:27:57 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-15 22:27:57 - Initializing Servlet 'dispatcherServlet'
+2024-06-15 22:27:57 - Completed initialization in 2 ms
+2024-06-15 22:27:57 - Received signup request for email: newuser@example.com
+2024-06-15 22:27:57 - Creating user in Keycloak: newuser@example.com
+2024-06-15 22:27:58 - Error during signup for email: newuser@example.com
+javax.ws.rs.ProcessingException: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.filterRequest(ClientInvocation.java:592)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.invoke(ClientInvocation.java:440)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:149)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy4/jdk.proxy4.$Proxy219.create(Unknown Source)
+	at br.com.projeto.pizzaria.service.SignupService.signup(SignupService.java:70)
+	at br.com.projeto.pizzaria.controller.SignupController.signup(SignupController.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -6518,42 +6479,59 @@ org.springframework.web.client.ResourceAccessException: I/O error on POST reques
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:378)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
-	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:316)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
-	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
-	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
-	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458)
-	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:201)
-	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
-	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1510)
-	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1425)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
-	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
-	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:589)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:187)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:75)
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:862)
-	... 136 common frames omitted
-Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
-	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
-	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
-	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231)
-	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
-	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
-	... 154 common frames omitted
-Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
-	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:146)
-	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:127)
-	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
-	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
-	... 159 common frames omitted
+Caused by: javax.ws.rs.NotFoundException: HTTP 404 Not Found
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:226)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy4/jdk.proxy4.$Proxy210.grantToken(Unknown Source)
+	at org.keycloak.admin.client.token.TokenManager.grantToken(TokenManager.java:90)
+	at org.keycloak.admin.client.token.TokenManager.getAccessToken(TokenManager.java:70)
+	at org.keycloak.admin.client.token.TokenManager.getAccessTokenString(TokenManager.java:65)
+	at org.keycloak.admin.client.resource.BearerAuthFilter.filter(BearerAuthFilter.java:52)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.filterRequest(ClientInvocation.java:579)
+	... 138 common frames omitted
+2024-06-15 22:34:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 22:34:21 - HikariPool-1 - Shutdown initiated...
+2024-06-15 22:34:31 - Timed-out waiting for close connection executor to shutdown
+2024-06-15 22:34:31 - HikariPool-1 - Shutdown completed.
+2024-06-15 22:34:32 - HV000001: Hibernate Validator 8.0.1.Final
+2024-06-15 22:34:32 - Starting PizzariaApplication using Java 17.0.8.1 with PID 37028 (C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend\target\classes started by Guilherme in C:\Users\Guilherme\Documents\My\Full_Stack_Projects\PizzaErick\backend)
+2024-06-15 22:34:32 - No active profile set, falling back to 1 default profile: "default"
+2024-06-15 22:34:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-15 22:34:33 - Finished Spring Data repository scanning in 65 ms. Found 7 JPA repository interfaces.
+2024-06-15 22:34:35 - Tomcat initialized with port(s): 443 (https)
+2024-06-15 22:34:35 - Initializing ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 22:34:35 - Starting service [Tomcat]
+2024-06-15 22:34:35 - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-06-15 22:34:35 - Initializing Spring embedded WebApplicationContext
+2024-06-15 22:34:35 - Root WebApplicationContext: initialization completed in 2662 ms
+2024-06-15 22:34:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-15 22:34:36 - HHH000412: Hibernate ORM core version 6.2.6.Final
+2024-06-15 22:34:36 - HHH000406: Using bytecode reflection optimizer
+2024-06-15 22:34:37 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 22:34:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-15 22:34:37 - HikariPool-1 - Starting...
+2024-06-15 22:34:39 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72168258
+2024-06-15 22:34:39 - HikariPool-1 - Start completed.
+2024-06-15 22:34:40 - HHH000021: Bytecode provider name : bytebuddy
+2024-06-15 22:34:40 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-15 22:34:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-15 22:34:42 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-15 22:34:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-15 22:34:46 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-15 22:34:46 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3564caf8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ce15aa, org.springframework.security.web.context.SecurityContextHolderFilter@79b07ccd, org.springframework.security.web.header.HeaderWriterFilter@669f2128, org.springframework.security.web.authentication.logout.LogoutFilter@4f3f8115, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@7b78c40d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78c7d992, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35f011cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3dabf112, org.springframework.security.web.session.SessionManagementFilter@7d8fcde8, org.springframework.security.web.access.ExceptionTranslationFilter@6ca6a1a6, org.springframework.security.web.access.intercept.AuthorizationFilter@3e7e4aea]
+2024-06-15 22:34:47 - Starting ProtocolHandler ["https-jsse-nio-443"]
+2024-06-15 22:34:47 - Connector [https-jsse-nio-443], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Guilherme;.keystore] using alias [pizzariagln] with trust store [null]
+2024-06-15 22:34:47 - Tomcat started on port(s): 443 (https) with context path ''
+2024-06-15 22:34:47 - Started PizzariaApplication in 15.541 seconds (process running for 15.935)
+2024-06-15 22:35:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-15 22:35:43 - Initializing Servlet 'dispatcherServlet'
+2024-06-15 22:35:43 - Completed initialization in 1 ms
+2024-06-15 22:35:44 - Received login request for email: teste@gmail.com
+2024-06-15 22:35:44 - Authenticating user with Keycloak: teste@gmail.com
+2024-06-15 22:35:44 - Keycloak authentication successful for user: teste@gmail.com
+2024-06-15 22:35:44 - User authenticated, generating JWT token
+2024-06-15 22:35:44 - Login successful for email: teste@gmail.com

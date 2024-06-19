@@ -42,7 +42,7 @@ public class TokenController {
         HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(formData, headers);
 
         return rt.postForEntity(
-                "http://localhost:8080/realms/pizzariaGLN/protocol/openid-connect/token",
+                "https://54.167.145.183:8443/realms/pizzariaGLN/protocol/openid-connect/token",
                 entity,
                 String.class);
     }
