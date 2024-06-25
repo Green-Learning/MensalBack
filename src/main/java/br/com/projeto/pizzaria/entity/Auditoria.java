@@ -25,6 +25,7 @@ public class Auditoria {
     @JoinColumn(name = "sabores_id")
     @JsonIgnoreProperties("item")
     private Sabores sabores;
+    
     @ManyToOne
     @JoinColumn(name = "item_id")
     @JsonIgnoreProperties("pedido")
