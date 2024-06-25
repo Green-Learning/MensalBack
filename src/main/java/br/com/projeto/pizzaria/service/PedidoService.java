@@ -4,13 +4,14 @@ import br.com.projeto.pizzaria.convert.FuncionarioDTOConvert;
 import br.com.projeto.pizzaria.convert.UsuarioDTOConvert;
 import br.com.projeto.pizzaria.dto.ItemDTO;
 import br.com.projeto.pizzaria.dto.PedidoDTO;
-import br.com.projeto.pizzaria.entity.Item;
+import br.com.projeto.pizzaria.entity.*;
 import br.com.projeto.pizzaria.entity.Pedido;
-import br.com.projeto.pizzaria.repository.PedidoRepository;
+import br.com.projeto.pizzaria.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,8 +30,11 @@ public class PedidoService {
     @Autowired
     private ItemService itemService;
 
+    @Autowired
+    private AuditoriaRepository auditoriaRepository;
 
-    public PedidoDTO criar(PedidoDTO pedidoDTO){
+
+    public PedidoDTO criar(PedidoDTO pedidoDTO, String userCreacao){
 
        Pedido pedido = toPedido(pedidoDTO);
 
@@ -42,6 +46,12 @@ public class PedidoService {
 
        pedidoRepository.save(pedido);
         calcularValorTotalPedido(pedido.getId());
+
+        Auditoria auditoria = new Auditoria();
+        auditoria.setPedido(pedido);
+        auditoria.setDataHoraCriacao(new Timestamp(System.currentTimeMillis()));
+        auditoria.setUserCriacao(userCreacao);
+        auditoriaRepository.save(auditoria);
 
        return toPedidoDTO(pedido);
     }
@@ -63,7 +73,7 @@ public class PedidoService {
         return pedidoDTOList;
     }
 
-    public PedidoDTO editar(Long id, PedidoDTO pedidoDTO){
+    public PedidoDTO editar(Long id, PedidoDTO pedidoDTO, String userAlteracao){
         Pedido pedido = this.pedidoRepository.findById(id).orElse(null);
 
         Assert.isTrue(pedido != null, "Pedido nao encontrado");
@@ -71,15 +81,27 @@ public class PedidoService {
         this.pedidoRepository.save(toPedido(pedidoDTO));
         calcularValorTotalPedido(id);
 
+        Auditoria auditoria = new Auditoria();
+        auditoria.setPedido(toPedido(pedidoDTO));
+        auditoria.setDataHoraAlteracao(new Timestamp(System.currentTimeMillis()));
+        auditoria.setUserAlteracao(userAlteracao);
+        auditoriaRepository.save(auditoria);
+
         return pedidoDTO;
     }
 
-    public String deletar(Long id){
+    public String deletar(Long id, String userExclusao){
         Pedido pedido = this.pedidoRepository.findById(id).orElse(null);
 
         Assert.isTrue(pedido != null, "Pedido nao encontrado");
 
         this.pedidoRepository.delete(pedido);
+
+        Auditoria auditoria = new Auditoria();
+            auditoria.setPedido(pedido);
+            auditoria.setDataHoraExclusao(new Timestamp(System.currentTimeMillis()));
+            auditoria.setUserExclusao(userExclusao);
+            auditoriaRepository.save(auditoria);
 
         return "Pedido deletado";
     }

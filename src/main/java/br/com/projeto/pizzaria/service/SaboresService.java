@@ -3,14 +3,17 @@ package br.com.projeto.pizzaria.service;
 import br.com.projeto.pizzaria.dto.ItemDTO;
 import br.com.projeto.pizzaria.dto.PedidoDTO;
 import br.com.projeto.pizzaria.dto.SaboresDTO;
+import br.com.projeto.pizzaria.entity.Auditoria;
 import br.com.projeto.pizzaria.entity.Item;
 import br.com.projeto.pizzaria.entity.Pedido;
 import br.com.projeto.pizzaria.entity.Sabores;
+import br.com.projeto.pizzaria.repository.AuditoriaRepository;
 import br.com.projeto.pizzaria.repository.SaboresRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,10 +26,19 @@ public class SaboresService {
     @Autowired
     private ItemService itemService;
 
-    public SaboresDTO criar(SaboresDTO saboresDTO){
+    @Autowired
+    private AuditoriaRepository auditoriaRepository;
+
+    public SaboresDTO criar(SaboresDTO saboresDTO, String userCreacao){
         Sabores sabores = toSabores(saboresDTO);
 
         this.saboresRepository.save(sabores);
+
+        Auditoria auditoria = new Auditoria();
+        auditoria.setSabores(sabores);
+        auditoria.setDataHoraCriacao(new Timestamp(System.currentTimeMillis()));
+        auditoria.setUserCriacao(userCreacao);
+        auditoriaRepository.save(auditoria);
 
         return toSaboresDTO(sabores);
     }
@@ -48,22 +60,34 @@ public class SaboresService {
         return saboresDTOList;
     }
 
-    public SaboresDTO editar(Long id, SaboresDTO saboresDTO){
+    public SaboresDTO editar(Long id, SaboresDTO saboresDTO, String userAlteracao){
         Sabores sabores = this.saboresRepository.findById(id).orElse(null);
 
         Assert.isTrue(sabores != null, "Sabor nao encontrado");
 
         this.saboresRepository.save(toSabores(saboresDTO));
 
+        Auditoria auditoria = new Auditoria();
+        auditoria.setSabores(toSabores(saboresDTO));
+        auditoria.setDataHoraAlteracao(new Timestamp(System.currentTimeMillis()));
+        auditoria.setUserAlteracao(userAlteracao);
+        auditoriaRepository.save(auditoria);
+
         return saboresDTO;
     }
 
-    public String deletar(Long id){
+    public String deletar(Long id, String userExclusao){
         Sabores sabores = this.saboresRepository.findById(id).orElse(null);
 
         Assert.isTrue(sabores != null, "Sabor nao encontrado");
 
         this.saboresRepository.delete(sabores);
+
+        Auditoria auditoria = new Auditoria();
+            auditoria.setSabores(sabores);
+            auditoria.setDataHoraExclusao(new Timestamp(System.currentTimeMillis()));
+            auditoria.setUserExclusao(userExclusao);
+            auditoriaRepository.save(auditoria);
 
         return "Sabor deletado";
     }

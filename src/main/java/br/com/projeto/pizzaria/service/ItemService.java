@@ -4,14 +4,17 @@ import br.com.projeto.pizzaria.convert.UsuarioDTOConvert;
 import br.com.projeto.pizzaria.dto.ItemDTO;
 import br.com.projeto.pizzaria.dto.PedidoDTO;
 import br.com.projeto.pizzaria.dto.SaboresDTO;
+import br.com.projeto.pizzaria.entity.Auditoria;
 import br.com.projeto.pizzaria.entity.Item;
 import br.com.projeto.pizzaria.entity.Pedido;
 import br.com.projeto.pizzaria.entity.Sabores;
+import br.com.projeto.pizzaria.repository.AuditoriaRepository;
 import br.com.projeto.pizzaria.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,13 +27,22 @@ public class ItemService {
     @Autowired
     private UsuarioDTOConvert usuarioDTOConvert;
 
+    @Autowired
+    private AuditoriaRepository auditoriaRepository;
+
 //    @Autowired
 //    private SaboresService saboresService;
 
-    public ItemDTO criar(ItemDTO itemDTO){
+    public ItemDTO criar(ItemDTO itemDTO , String userCreacao){
         Item item = toItem(itemDTO);
 
         itemRepository.save(item);
+
+        Auditoria auditoria = new Auditoria();
+        auditoria.setItem(item);
+        auditoria.setDataHoraCriacao(new Timestamp(System.currentTimeMillis()));
+        auditoria.setUserCriacao(userCreacao);
+        auditoriaRepository.save(auditoria);
 
         return toItemDTO(item);
     }
@@ -51,22 +63,34 @@ public class ItemService {
         return itensDTOList;
     }
 
-    public ItemDTO editar(Long id, ItemDTO itemDTO){
+    public ItemDTO editar(Long id, ItemDTO itemDTO, String userAlteracao){
         Item item = this.itemRepository.findById(id).orElse(null);
 
         Assert.isTrue(item != null, "Item nao encontrado");
 
         this.itemRepository.save(toItem(itemDTO));
 
+        Auditoria auditoria = new Auditoria();
+        auditoria.setItem(toItem(itemDTO));
+        auditoria.setDataHoraAlteracao(new Timestamp(System.currentTimeMillis()));
+        auditoria.setUserAlteracao(userAlteracao);
+        auditoriaRepository.save(auditoria);
+
         return itemDTO;
     }
 
-    public String deletar(Long id){
+    public String deletar(Long id, String userExclusao){
         Item item = this.itemRepository.findById(id).orElse(null);
 
         Assert.isTrue(item != null, "Item nao encontrado");
 
         this.itemRepository.delete(item);
+
+        Auditoria auditoria = new Auditoria();
+            auditoria.setItem(item);
+            auditoria.setDataHoraExclusao(new Timestamp(System.currentTimeMillis()));
+            auditoria.setUserExclusao(userExclusao);
+            auditoriaRepository.save(auditoria);
 
         return "Item deletado";
     }

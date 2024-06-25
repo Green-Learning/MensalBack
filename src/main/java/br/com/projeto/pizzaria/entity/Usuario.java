@@ -31,19 +31,20 @@ public class Usuario {
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     private List<Endereco> enderecos;
 
-    @OneToOne
-    @JoinColumn(name = "usuario")
-    private UserConta userConta;
+    // @OneToOne
+    // @JoinColumn(name = "usuario")
+    // private UserConta userConta;
 
     public Usuario(){
 
     }
-
-    public Usuario(Long id, String nome, String telefone, String cpf, UserConta userConta) {
+    
+    // ,UserConta userConta
+    public Usuario(Long id, String nome, String telefone, String cpf) {
         this.id = id;
         this.nome = nome;
         this.telefone = telefone;
         this.cpf = cpf;
-        this.userConta = userConta;
+        //this.userConta = userConta;
     }
 }

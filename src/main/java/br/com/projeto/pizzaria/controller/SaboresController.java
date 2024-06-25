@@ -8,7 +8,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.List;
+import java.util.Map;
+
 
 @RestController
 @RequestMapping("/api/sabores")
@@ -19,9 +23,12 @@ public class SaboresController {
     private SaboresService saboresService;
 
     @PostMapping
-    public ResponseEntity<SaboresDTO> criar (@RequestBody SaboresDTO saboresDTO){
+    public ResponseEntity<SaboresDTO> criar (@RequestBody Map<String, Object> payload){
         try{
-            return ResponseEntity.ok(saboresService.criar(saboresDTO));
+            SaboresDTO saboresDTO = new ObjectMapper().convertValue(payload.get("sabores"), SaboresDTO.class);
+            String userCreacao = (String) payload.get("userCreacao");
+            return ResponseEntity.ok(saboresService.criar(saboresDTO, userCreacao));
+
         }catch (Exception e){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
         }
@@ -46,19 +53,23 @@ public class SaboresController {
     }
 
     @PutMapping("/editar/{id}")
-    public ResponseEntity<SaboresDTO> editar(@PathVariable("id")Long id, @RequestBody SaboresDTO saboresDTO){
+    public ResponseEntity<SaboresDTO> editar(@PathVariable("id")Long id, @RequestBody Map<String, Object> payload){
         try{
-            return ResponseEntity.ok(saboresService.editar(id,saboresDTO));
+            SaboresDTO saboresDTO = new ObjectMapper().convertValue(payload.get("sabores"), SaboresDTO.class);
+            String userAlteracao = (String) payload.get("userAlteracao");
+            return ResponseEntity.ok(saboresService.editar(id, saboresDTO, userAlteracao));
+
         }catch (Exception e){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
         }
     }
 
     @DeleteMapping("/deletar/{id}")
-    public ResponseEntity<HttpStatus> deletar(@PathVariable("id") Long id){
+    public ResponseEntity<HttpStatus> deletar(@PathVariable("id") Long id, @RequestParam String userExclusao){
         try{
-            saboresService.deletar(id);
+            saboresService.deletar(id,userExclusao);
             return ResponseEntity.ok(HttpStatus.OK);
+
         }catch (Exception e){
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
         }

@@ -20,6 +20,7 @@ public class Sabores {
 
     @ManyToMany(mappedBy = "sabores")
     private List<Item> item;
+    
 
     public Sabores(){
 
